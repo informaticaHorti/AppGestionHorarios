@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemNomina"
+    android:layout_marginBottom="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dateD"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/hND"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/hED"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/hFD"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/pD"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/tTD"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreen"
+            android:text="00.00"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+
+</LinearLayout>

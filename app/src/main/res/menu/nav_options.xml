@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menu_gestion_horarios"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="Gestion Horarios"/>
+        <item android:id="@+id/menu_gestion_usuarios"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Gestion de Usuarios"/>
+        <item android:id="@+id/menu_gestion_tarifas"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Gestion Tarifas"/>
+        <item android:id="@+id/menu_gestion_nominas"
+            android:icon="@android:drawable/ic_menu_month"
+            android:title="Gestion Nominas"/>
+
+    </group>
+    <item android:title="Otras Opciones">
+        <menu>
+            <item android:id="@+id/menu_cambio_usuario"
+                android:icon="@android:drawable/ic_dialog_map"
+                android:title="Cambiar de Usuario"/>
+            <item android:id="@+id/menu_definir_hora_def"
+                android:icon="@android:drawable/ic_menu_agenda"
+                android:title="Definir Horario por Defecto"/>
+        </menu>
+    </item>
+
+</menu>

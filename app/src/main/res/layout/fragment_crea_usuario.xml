@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.GestionUsuarios">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/tituloFramgne"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="21sp"
+            android:gravity="center"
+            android:text="GESTION DE USUARIOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/cabeceraUsuario"
+            android:layout_below="@id/tituloFramgne"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="18sp"
+                android:text="ID"
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="18sp"
+                android:text="NOMBRE"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="18sp"
+                android:text="TARIFA"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="7sp"
+                android:text="IdT"
+                android:textAlignment="center"
+                android:layout_width="1dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_below="@id/cabeceraUsuario"
+            android:id="@+id/datosUSR"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/cdUsr"
+                android:textSize="18sp"
+                android:text="ID"
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/nombreUsr"
+                android:textSize="18sp"
+                android:text="NOMBRE"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/nmTarifa"
+                android:textSize="18sp"
+                android:text="TARIFA"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/idTarifa"
+                android:textSize="7sp"
+                android:text="1"
+                android:textAlignment="center"
+                android:layout_width="1dp"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_below="@id/datosUSR"
+            android:id="@+id/datosAntig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="ANTIGÜEDAD: "
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/antUsr"
+                android:inputType="numberDecimal"
+                android:hint="0.00"
+                android:layout_width="90dp"
+                android:textSize="21sp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text=" €/hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_below="@id/datosAntig"
+            android:id="@+id/datosIrpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="I.R.P.F : "
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/irpf"
+            android:hint="0.00"
+            android:textSize="21sp"
+            android:inputType="numberDecimal"
+            android:layout_width="90dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text=" %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_below="@id/datosIrpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Seg.Sc: "
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/segsoc"
+            android:hint="0.00"
+            android:textSize="21sp"
+            android:inputType="numberDecimal"
+            android:layout_width="90dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text=" %"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnSaveUsuario"
+                android:text="Guardar Usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnDelUsuario"
+                android:text="Borrar Usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
+</FrameLayout>

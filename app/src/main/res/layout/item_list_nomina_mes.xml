@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemNomina"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/yearN"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2024"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/idmesN"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:visibility="invisible"
+            android:textAlignment="center"
+            android:textSize="8sp" />
+        <TextView
+            android:id="@+id/mesN"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Mes Nomina"
+            android:textAlignment="textStart"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/diasN"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="30"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/importeN"
+            android:textAlignment="textEnd"
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1.590,89"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="€"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+</LinearLayout>
