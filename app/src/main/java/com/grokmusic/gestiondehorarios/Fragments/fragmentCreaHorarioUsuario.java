@@ -211,7 +211,7 @@ public class fragmentCreaHorarioUsuario extends Fragment{
                 calculaDia(hN,EX,0,paradas);
 
             }else{
-                 hN = totalN-pM-pT;
+                 hN = totalN;
                  EX = 0;
                  FI = 0;
                 String N = utils.calculaDoubleAHora(hN);
