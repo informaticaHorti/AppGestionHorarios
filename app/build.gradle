@@ -18,6 +18,15 @@ android {
         vectorDrawables {
             useSupportLibrary true
         }
+        signingConfigs {
+            release {
+                storeFile file('C:\\PROYECTOS_ANDROID\\KEY_STORE\\APP_HORARIOS\\HorariosHorti.jks')
+                storePassword 'legacy'
+                keyAlias = 'key1'
+                keyPassword 'legacy'
+            }
+
+        }
     }
 
     buildTypes {
